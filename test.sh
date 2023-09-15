@@ -44,7 +44,7 @@ function test_all() {
     return 0
 }
 
-[ ! -d "${PWD}/test" ] && /bin/tar xf ${PWD}/test.tar
+[ ! -d "${PWD}/test" ] && /bin/tar zxf ${PWD}/test.tar.gz
 
 if [ -n "$1" ] && [ -n "$2" ] && [ -n "$3" ]; then
     test_case $1 $2 $3
