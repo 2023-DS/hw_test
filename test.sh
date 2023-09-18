@@ -18,13 +18,10 @@ function test_case() {
             /bin/echo "${hwId} ${proId} input_${caseId}.txt AC"
         else
             /bin/echo "${hwId} ${proId} input_${caseId}.txt WA"
-            /bin/echo "Expect: $(/bin/cat ${PWD}/tmp_B.txt)"
-            /bin/echo "Actual: $(/bin/cat ${PWD}/tmp_A.txt)"
         fi
     fi
     /bin/rm -f ${PWD}/tmp_A.txt
     /bin/rm -f ${PWD}/tmp_B.txt
-    /bin/echo "---------------"
     return $ret
 }
 
